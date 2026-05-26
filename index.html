@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="大分県竹田市久住高原にある『Cafe Procione（カフェ プロチオーネ）』。阿蘇五岳を望むのどかな絶景の中、DIYでリノベーションした温かい空間で、たぬき印のホットサンドやラテアート、エスプレッソドリンクをお楽しみください。">
+    <meta property="og:title" content="Cafe Procione | 久住高原ののどかな絶景カフェ">
+    <meta property="og:description" content="阿蘇五岳を望む絶景と、たぬき印のホットサンド。DIYで作り上げた温もりあふれる高原の小さなカフェ。">
+    <meta property="og:image" content="assets/view.jpg">
+    <meta property="og:type" content="website">
+    <title>Cafe Procione (カフェ プロチオーネ) | 久住高原の絶景カフェ</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Header -->
+    <header id="site-header" class="site-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="nav-logo">
+                <img src="assets/logo_horizontal.png" alt="Cafe Procione" class="logo-img">
+            </a>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link" id="link-hero" data-i18n="nav-top">Top</a></li>
+                    <li><a href="#concept" class="nav-link" id="link-concept" data-i18n="nav-concept">Concept</a></li>
+                    <li><a href="#menu" class="nav-link" id="link-menu" data-i18n="nav-menu">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link" id="link-gallery" data-i18n="nav-gallery">Gallery</a></li>
+                    <li><a href="#access" class="nav-link" id="link-access" data-i18n="nav-access">Access</a></li>
+                    <li class="lang-select-wrapper">
+                        <select id="lang-select" class="lang-select" aria-label="Language">
+                            <option value="ja">日本語</option>
+                            <option value="en">English</option>
+                            <option value="zh">简体中文</option>
+                            <option value="ko">한국어</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg">
+                <div class="hero-bg-panel" style="background-image: url('assets/view.jpg');"></div>
+                <div class="hero-bg-panel" style="background-image: url('assets/latte_cookies.jpg');"></div>
+                <div class="hero-bg-panel" style="background-image: url('assets/sunset.jpg');"></div>
+                <div class="hero-bg-panel" style="background-image: url('assets/bench.jpg'); background-position: center 98%;"></div>
+            </div>
+            <div class="hero-content">
+                <img src="assets/logo_icon.png" alt="Cafe Procione Icon" class="hero-logo scroll-reveal">
+                <p class="hero-subtitle scroll-reveal" data-i18n="hero-subtitle">阿蘇五岳を望む、久住高原の小さなカフェ</p>
+                <h1 class="hero-title scroll-reveal">Cafe Procione</h1>
+                <p class="hero-tagline scroll-reveal" data-i18n="hero-tagline">穏やかな風と山々の稜線、エスプレッソが薫る贅沢な時間。</p>
+                <div class="hero-actions scroll-reveal">
+                    <a href="#concept" class="btn btn-primary" id="btn-discover" data-i18n="hero-btn-story">Story</a>
+                    <a href="#menu" class="btn btn-secondary" id="btn-viewmenu" data-i18n="hero-btn-menu">Menu</a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <span data-i18n="hero-scroll">Scroll Down</span>
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        <!-- Concept Section -->
+        <section id="concept" class="concept-section section-padding">
+            <div class="container">
+                <div class="grid grid-2col items-center">
+                    <div class="concept-text scroll-reveal">
+                        <span class="section-subtitle" data-i18n="concept-subtitle">Our Story</span>
+                        <h2 class="section-title" data-i18n="concept-title">たぬきが繋ぐ、高原の温もり</h2>
+                        <div class="divider"></div>
+                        <p class="concept-desc" data-i18n="concept-desc-1">
+                            大分県竹田市久住町ののどかな高原に佇む「Cafe Procione（カフェ プロチオーネ）」は、2025年9月にオープンしました。
+                        </p>
+                        <p class="concept-desc" data-i18n="concept-desc-2">
+                            かつてこの場所で愛されていた田舎料理店「たぬき八」の跡地を受け継ぎ、移住してきた私たち夫婦が自らの手でDIYリノベーションを行って、温もりあふれるカフェへと生まれ変わらせました。
+                        </p>
+                        <p class="concept-desc" data-i18n="concept-desc-3">
+                            イタリア語で「たぬき」を意味する「プロチオーネ」。かつての記憶に敬意を払いながら、訪れる人々が久住の壮大な自然に包まれて、ゆったりとした時間を過ごせる場所でありたいと願っています。
+                        </p>
+                    </div>
+                    <div class="concept-image scroll-reveal">
+                        <div class="image-wrapper">
+                            <img src="assets/sign.jpg" alt="Cafe Procione 木製看板" class="img-responsive image-zoom-effect" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal">
+                    <span class="section-subtitle" data-i18n="menu-subtitle">Cafe Menu</span>
+                    <h2 class="section-title" data-i18n="menu-title">おすすめメニュー</h2>
+                    <div class="divider center"></div>
+                </div>
+                
+                <div class="grid grid-4col">
+                    <!-- Menu Item 1: Hot Sandwich -->
+                    <div class="menu-card scroll-reveal">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/sandwich.jpg" alt="たぬき印のホットサンド" class="menu-img" loading="lazy">
+                            <span class="menu-tag" data-i18n="menu-tag-1">看板メニュー</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-item-title" data-i18n="menu-item-title-1">たぬき印のホットサンド</h3>
+                            <p class="menu-item-desc" data-i18n="menu-item-desc-1">可愛い「たぬき」の焼き印が押された当店自慢のホットサンド。カリッと香ばしい生地に、ハム＆チーズなどの美味しい具材を包みました。</p>
+                            <span class="menu-item-price" data-i18n="menu-item-price-1">¥550 〜</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item 2: Espresso & Latte -->
+                    <div class="menu-card scroll-reveal">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/espresso_latte.jpg" alt="エスプレッソとカフェラテ" class="menu-img" loading="lazy">
+                            <span class="menu-tag" data-i18n="menu-tag-2">Espresso</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-item-title" data-i18n="menu-item-title-2">エスプレッソ & カフェラテ</h3>
+                            <p class="menu-item-desc" data-i18n="menu-item-desc-2">専用のマシンで丁寧に抽出した薫り高いエスプレッソと、きめ細やかにスチームしたミルクを合わせたカフェラテ（ラテアート）がお楽しみいただけます。</p>
+                            <span class="menu-item-price" data-i18n="menu-item-price-2">¥400 〜</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item 3: Morning Plate -->
+                    <div class="menu-card scroll-reveal">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/breakfast.jpg" alt="数量限定モーニングプレート" class="menu-img" loading="lazy">
+                            <span class="menu-tag" data-i18n="menu-tag-3">Morning</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-item-title" data-i18n="menu-item-title-3">モーニングプレート [数量限定]</h3>
+                            <p class="menu-item-desc" data-i18n="menu-item-desc-3">自家製パン2種、地元産の卵とベーコンで作る絶品ベーコンエッグ、フレッシュなグリーンサラダ、温かいスープが一つになった贅沢な数量限定モーニングプレートです。</p>
+                            <span class="menu-item-price" data-i18n="menu-item-price-3">¥1,380</span>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 4: Ambiance -->
+                    <div class="menu-card scroll-reveal">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/workspace.jpg" alt="コワーキング・リラックススペース" class="menu-img" loading="lazy">
+                            <span class="menu-tag" data-i18n="menu-tag-4">Ambiance</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-item-title" data-i18n="menu-item-title-4">カフェ空間・ノマド利用</h3>
+                            <p class="menu-item-desc" data-i18n="menu-item-desc-4">窓からの絶景を眺めながら、読書やお仕事に集中できる落ち着いた空間です。美味しいドリンクとともに、クリエイティブな時間をお過ごしください。</p>
+                            <span class="menu-item-price" data-i18n="menu-item-price-4">Free Wi-Fi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section section-padding">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal">
+                    <span class="section-subtitle" data-i18n="gallery-subtitle">Visual Story</span>
+                    <h2 class="section-title" data-i18n="gallery-title">ギャラリー</h2>
+                    <div class="divider center"></div>
+                </div>
+                
+                <div class="gallery-grid scroll-reveal">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item size-large">
+                        <img src="assets/window_morning.jpg" alt="朝の光と高原の朝食" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-1">朝の光と高原の朝食</h4>
+                                <p data-i18n="gallery-item-desc-1">窓辺で味わう自家製のモーニングプレートとあたたかいカフェラテ</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item size-wide">
+                        <img src="assets/sunset.jpg" alt="夕暮れの久住高原" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-4">夕暮れの久住高原</h4>
+                                <p data-i18n="gallery-item-desc-4">阿蘇五岳の彼方に沈む夕日と、黄金色に染まる草原の一本の木</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item">
+                        <img src="assets/breakfast.jpg" alt="モーニングプレート" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-5">モーニングプレート</h4>
+                                <p data-i18n="gallery-item-desc-5">数量限定。地元産卵とベーコンのベーコンエッグ、自家製パン2種、新鮮なサラダ、スープ。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item">
+                        <img src="assets/flowers.jpg" alt="野の花とテラスベンチ" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-6">野の花とテラスベンチ</h4>
+                                <p data-i18n="gallery-item-desc-6">庭に咲く真っ白なマーガレットと、心地よい風が通り抜けるベンチ</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item size-large">
+                        <img src="assets/soda.jpg" alt="メロンソーダフロート" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-2">メロンソーダフロート</h4>
+                                <p data-i18n="gallery-item-desc-2">青空に映える、爽快なメロンソーダと冷たいソフトクリーム</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item size-large">
+                        <img src="assets/pudding.jpg" alt="自家製プリン" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-3">自家製プリン</h4>
+                                <p data-i18n="gallery-item-desc-3">地元・久住産の卵のコクとほろ苦いカラメルソースが絶妙な、昔ながらの自家製プリン。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 7 -->
+                    <div class="gallery-item size-large">
+                        <img src="assets/icetea.jpg" alt="窓辺の特等席" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-7">窓辺の特等席</h4>
+                                <p data-i18n="gallery-item-desc-7">木漏れ日が差し込む窓辺で、爽やかなベリーソーダを楽しむひととき</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 8 -->
+                    <div class="gallery-item size-wide">
+                        <img src="assets/latte_cookies.jpg" alt="珈琲時間" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-8">珈琲時間</h4>
+                                <p data-i18n="gallery-item-desc-8">美しいラテアートと自家製のチョコチャンククッキー</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 9 -->
+                    <div class="gallery-item size-large">
+                        <img src="assets/bench.jpg" alt="高原のテラスベンチ" style="object-position: center 98%;" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-9">高原のテラスベンチ</h4>
+                                <p data-i18n="gallery-item-desc-9">木陰の特等席から、阿蘇の山並みを一人占めする贅沢</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 10 -->
+                    <div class="gallery-item size-wide">
+                        <img src="assets/sign.jpg" alt="Cafe Procione 木製看板" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-10">Cafe Procione 木製看板</h4>
+                                <p data-i18n="gallery-item-desc-10">たぬきをモチーフにした温もりある手作り看板</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Section -->
+        <section id="access" class="access-section section-padding bg-dark text-light">
+            <div class="container">
+                <div class="grid grid-2col items-center">
+                    <div class="access-info scroll-reveal">
+                        <span class="section-subtitle" data-i18n="access-subtitle">Information</span>
+                        <h2 class="section-title text-light" data-i18n="access-title">営業時間・アクセス</h2>
+                        <div class="divider text-light"></div>
+                        
+                        <ul class="access-details">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4 data-i18n="access-label-address">住所</h4>
+                                    <p data-i18n="access-value-address">〒878-0205 大分県竹田市久住町大字白丹7577-2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-clock"></i>
+                                <div>
+                                    <h4 data-i18n="access-label-hours">営業時間</h4>
+                                    <p data-i18n="access-value-hours">9:00 〜 16:00 (ラストオーダー 15:30)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-calendar-xmark"></i>
+                                <div>
+                                    <h4 data-i18n="access-label-closed">定休日</h4>
+                                    <p data-i18n="access-value-closed">日曜日・月曜日</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-square-parking"></i>
+                                <div>
+                                    <h4 data-i18n="access-label-parking">駐車場</h4>
+                                    <p data-i18n="access-value-parking">あり</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-wifi"></i>
+                                <div>
+                                    <h4 data-i18n="access-label-wifi">Wi-Fi / 作業利用</h4>
+                                    <p data-i18n="access-value-wifi">Wi-Fiあり / 作業利用可</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-credit-card"></i>
+                                <div>
+                                    <h4 data-i18n="access-label-payment">お支払い方法</h4>
+                                    <p data-i18n="access-value-payment">各種キャッシュレス決済対応</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-instagram"></i>
+                                <div>
+                                    <h4 data-i18n="access-label-sns">Instagram</h4>
+                                    <p><a href="https://www.instagram.com/cafe_procione/" target="_blank" rel="noopener noreferrer" class="instagram-link">@cafe_procione <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="access-actions">
+                            <a href="https://share.google/yTmigg1n31Lrdcg4o" target="_blank" rel="noopener noreferrer" class="btn btn-terracotta" id="btn-googlemaps" data-i18n="access-btn-maps">
+                                <i class="fa-solid fa-map-location-dot"></i> Google Mapsで開く
+                            </a>
+                            <a href="https://www.instagram.com/cafe_procione/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-instagram" data-i18n="access-btn-insta">
+                                <i class="fa-brands fa-instagram"></i> Instagramを見る
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="access-map scroll-reveal">
+                        <div class="map-container">
+                            <iframe 
+                                src="https://maps.google.com/maps?q=Cafe%20Procione%20%E5%A4%A7%E5%88%86%E7%9C%8C%E7%AB%B9%E7%94%B0%E5%B8%82%E4%B9%85%E4%BD%8F%E7%94%BA%E7%99%BD%E4%B8%B97577-2&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Cafe Procioneの地図"
+                                id="google-map-iframe">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <img src="assets/logo_vertical.png" alt="Cafe Procione Logo" class="footer-logo-img">
+            <p class="footer-tag" data-i18n="footer-tag">阿蘇五岳を望む、久住高原の小さなカフェ</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/cafe_procione/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" id="footer-instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://share.google/yTmigg1n31Lrdcg4o" target="_blank" rel="noopener noreferrer" aria-label="Google Business Profile" id="footer-gmaps"><i class="fa-solid fa-store"></i></a>
+            </div>
+            <div class="divider center"></div>
+            <p class="copyright">&copy; 2026 Cafe Procione. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
