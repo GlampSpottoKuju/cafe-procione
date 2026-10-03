@@ -21,6 +21,62 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org Structured Data (JSON-LD) for Local Business / Cafe -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Cafe Procione",
+      "alternateName": "カフェ プロチオーネ",
+      "image": [
+        "https://glampspottokuju.github.io/cafe-procione/assets/view.jpg",
+        "https://glampspottokuju.github.io/cafe-procione/assets/winter_view.jpg",
+        "https://glampspottokuju.github.io/cafe-procione/assets/sandwich.jpg"
+      ],
+      "@id": "https://glampspottokuju.github.io/cafe-procione/",
+      "url": "https://glampspottokuju.github.io/cafe-procione/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "久住町大字白丹7577-2",
+        "addressLocality": "竹田市",
+        "addressRegion": "大分県",
+        "postalCode": "878-0205",
+        "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.01359,
+        "longitude": 131.226877
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "16:00"
+        }
+      ],
+      "servesCuisine": [
+        "Coffee",
+        "Hot Sandwich",
+        "Breakfast",
+        "Dessert"
+      ],
+      "priceRange": "¥500 - ¥1500",
+      "paymentAccepted": "Cashless, Credit Card",
+      "sameAs": [
+        "https://www.instagram.com/cafe_procione/"
+      ],
+      "description": "大分県竹田市久住高原にある絶景カフェ。阿蘇五岳を望むのどかなロケーションで、たぬき印のホットサンドやラテアート、スペシャルティコーヒー、モーニングプレートをお楽しみいただけます。冬も休まず通年営業中。"
+    }
+    </script>
 </head>
 <body>
 
@@ -68,7 +124,7 @@
                 <div class="hero-logo-container scroll-reveal">
                     <img src="assets/logo_icon.png" alt="Cafe Procione Icon" class="hero-logo-img">
                 </div>
-                <p class="hero-subtitle scroll-reveal" data-i18n="hero-subtitle">阿蘇五岳を望む、久住高原の小さなカフェ</p>
+                <p class="hero-subtitle scroll-reveal" data-i18n="hero-subtitle">阿蘇五岳を望む、久住高原の小さなカフェ（冬も通年営業中）</p>
                 <h1 class="hero-title scroll-reveal">Cafe Procione</h1>
                 <p class="hero-tagline scroll-reveal" data-i18n="hero-tagline">穏やかな風と山々の稜線、エスプレッソが薫る贅沢な時間。</p>
                 <div class="hero-actions scroll-reveal">
@@ -152,6 +208,13 @@
                             </div>
                             <h4 data-i18n="feature-item-title-5">アウトドアの合間に</h4>
                             <p data-i18n="feature-item-desc-5">近隣でのキャンプや温泉の前後、のんびりと静かな休憩時間を。</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-wrapper">
+                                <i class="fa-solid fa-snowflake"></i>
+                            </div>
+                            <h4 data-i18n="feature-item-title-6">冬も休まず通年営業</h4>
+                            <p data-i18n="feature-item-desc-6">薪ストーブの温もりと、一面の白銀世界を楽しむ冬の絶景ドライブに。</p>
                         </div>
                     </div>
                 </div>
@@ -260,8 +323,8 @@
                         <img src="assets/pudding.jpg" alt="自家製プリン" loading="lazy">
                         <div class="gallery-overlay">
                             <div class="gallery-text">
-                                <h4 data-i18n="gallery-item-title-3">自家製プリン</h4>
-                                <p data-i18n="gallery-item-desc-3">地元・久住産の卵のコクとほろ苦いカラメルソースが絶妙な、昔ながらの自家製プリン。</p>
+                                <h4 data-i18n="gallery-item-title-3">自家製プリン [本日のメニュー]</h4>
+                                <p data-i18n="gallery-item-desc-3">地元・久住産の卵のコクとほろ苦いカラメルソースが絶妙な、不定期出現の「本日のメニュー」自家製プリン。</p>
                             </div>
                         </div>
                     </div>
@@ -304,8 +367,8 @@
                         <img src="assets/latte_cookies.jpg" alt="珈琲時間" loading="lazy">
                         <div class="gallery-overlay">
                             <div class="gallery-text">
-                                <h4 data-i18n="gallery-item-title-8">珈琲時間</h4>
-                                <p data-i18n="gallery-item-desc-8">美しいラテアートと自家製のチョコチャンククッキー</p>
+                                <h4 data-i18n="gallery-item-title-8">珈琲時間 & 本日のクッキー</h4>
+                                <p data-i18n="gallery-item-desc-8">美しいラテアートと、不定期出現の「本日のメニュー」自家製チョコチャンククッキー。</p>
                             </div>
                         </div>
                     </div>
@@ -350,6 +413,39 @@
                             <div class="gallery-text">
                                 <h4 data-i18n="gallery-item-title-10">Cafe Procione 木製看板</h4>
                                 <p data-i18n="gallery-item-desc-10">たぬきをモチーフにした温もりある手作り看板</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 13: Winter Snowfall -->
+                    <div class="gallery-item size-large">
+                        <img src="assets/winter_view.jpg" alt="冬の久住高原と一本木" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-13">冬の久住高原と一本木</h4>
+                                <p data-i18n="gallery-item-desc-13">静かに舞い落ちる雪と、白銀の草原にたたずむ冬の木。冬も休まず通年営業中。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 14: Winter Sunset -->
+                    <div class="gallery-item size-wide">
+                        <img src="assets/winter_sunset.jpg" alt="冬の夕暮れと阿蘇の山並み" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-14">冬の夕暮れと阿蘇の山並み</h4>
+                                <p data-i18n="gallery-item-desc-14">茜色に染まる冬の空と、白銀の草原の向こうに浮かび上がる阿蘇五岳。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 15: Winter Clear Sky -->
+                    <div class="gallery-item size-wide">
+                        <img src="assets/winter_clear.jpg" alt="冬の快晴と雪冠の山々" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h4 data-i18n="gallery-item-title-15">冬の快晴と雪冠の山々</h4>
+                                <p data-i18n="gallery-item-desc-15">澄み切った青空と白銀の草原。眩しい陽光に輝く冬の絶景ドライブ。</p>
                             </div>
                         </div>
                     </div>
@@ -407,6 +503,13 @@
                                 <div>
                                     <h4 data-i18n="access-label-payment">お支払い方法</h4>
                                     <p data-i18n="access-value-payment">各種キャッシュレス決済対応</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-snowflake"></i>
+                                <div>
+                                    <h4 data-i18n="access-label-winter">冬期営業</h4>
+                                    <p data-i18n="access-value-winter">冬も休まず通年営業しております！（※積雪や路面状況はInstagramで発信中）</p>
                                 </div>
                             </li>
                             <li>
